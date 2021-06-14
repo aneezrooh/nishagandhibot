@@ -44,7 +44,7 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 
 @Client.on_message(filters.command('start'))
 async def start(client, message):
-    lmg_src=https://telegra.ph/file/99c7a652091d21bd4fd73.jpg
+    lmg_src="https://telegra.ph/file/99c7a652091d21bd4fd73.jpg"
     buttons = [
         [
         InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/stenzle'),
