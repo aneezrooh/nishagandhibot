@@ -43,7 +43,7 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 nishagandhi_img = "https://telegra.ph/file/99c7a652091d21bd4fd73.jpg"
 
 @Client.on_message(filters.command('start'))
-async def start(client, message): (
+async def start(client, message): 
     update.effective_message.reply_photo(
                 nishagandhi_img,
     buttons = [
