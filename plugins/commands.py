@@ -64,7 +64,7 @@ async def start(client, message): (
     await message.reply_text(
     HOME_TEXT,
     reply_markup=reply_markup
-)
+
 
 @Client.on_message(filters.command("help"))
 async def show_help(client, message):
