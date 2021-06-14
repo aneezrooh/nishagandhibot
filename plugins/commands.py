@@ -61,8 +61,9 @@ async def start(client, message): (
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply(HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
-
+    await message.reply(
+    HOME_TEXT,
+    reply_markup=reply_markup
 )
 
 @Client.on_message(filters.command("help"))
