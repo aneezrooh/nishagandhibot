@@ -61,7 +61,7 @@ async def start(client, message): (
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply(
+    await message.reply_text(
     HOME_TEXT,
     reply_markup=reply_markup
 )
