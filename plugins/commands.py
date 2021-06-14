@@ -40,11 +40,12 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 **/restart** Restarts the Bot.
 """
 
-
+nishagandhi_img = https://telegra.ph/file/99c7a652091d21bd4fd73.jpg
 
 @Client.on_message(filters.command('start'))
-async def start(client, message):
-    lmg_src=https://telegra.ph/file/99c7a652091d21bd4fd73.jpg
+async def start(client, message): (
+    update.effective_message.reply_photo(
+                nishagandhi_img
     buttons = [
         [
         InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/stenzle'),
@@ -62,7 +63,7 @@ async def start(client, message):
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
 
-
+)
 
 @Client.on_message(filters.command("help"))
 async def show_help(client, message):
